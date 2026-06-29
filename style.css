@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 5% auto;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #1b31f8, black);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0px 0px 3px white;
+}
+
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height: 40vh;
+
+}
+
+.card{
+    background-color: white;
+    color: black;
+    padding:10px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px black;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.description{
+    margin-top: 10px;
+}
+
+h3{
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    color: #1b31f8;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+}
+
+.card img{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transform: translateY(-10px);
+    transition: transform 0.4s ease-in-out;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+#all{
+    animation: fadeInUp 2s, ease-in-out;
+}
+
+.form{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: fit-content;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+#button{
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color:#1b31f8;
+    color: white;
+}
+
+textarea{
+    border-radius: 25px;
+    padding: 6px;
+}
+
+input{
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+.button_project{
+    border-radius: 25px;
+    padding: 10px;
+    background-color:#1b31f8;
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: xx-large;
+}
+
+.card a {
+  width: 100%;       
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .card{
+    width: 55%;
+    height: auto;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}   
